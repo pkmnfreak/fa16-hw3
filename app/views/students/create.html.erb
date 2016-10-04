@@ -1,0 +1,22 @@
+<div>
+  <h2>Your form inputs</h2>
+  <h3>Full name</h3>
+  <h4>
+    <%= @student_name %>
+    
+    <% if @student_name == "Evan Chang" %>
+      <%= "Wow! You're really cool! You're the best I love you" %>
+    <% end%>
+  </h4>
+  <h3>Age</h3>
+  <h4>
+    <%= @age %>
+    <% if Integer(@age) > 20 %>
+      <%= "Wow! You're really old! You old fart." %>
+    <% end %>
+  </h4>
+  <h3>Major</h3>
+  <h4>
+    <%= @major %>
+  </h4>
+</div>
